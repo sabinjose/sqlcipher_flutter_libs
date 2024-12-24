@@ -1,4 +1,4 @@
-> Source is cloned from https://github.com/simolus3/sqlite3.dart/tree/main/sqlcipher_flutter_libs based on release version 0.5.0 to fallback to old version of sqlcipher due to issue with latest version of sqlcipher android library net.zetetic:android-database-sqlcipher:4.4.3
+> The source was cloned from simolus3/sqlite3.dart at release version 0.5.0 to fall back to the older SQLCipher library (net.zetetic:android-database-sqlcipher:4.4.3) due to issues with the latest version.
 
 # sqlcipher_flutter_libs
 
