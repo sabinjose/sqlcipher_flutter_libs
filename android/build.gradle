@@ -1,38 +1,35 @@
-group 'eu.simonbinder.sqlite3_flutter_libs'
-version '1.0'
-
-buildscript {
-    repositories {
-        google()
-        mavenCentral()
-    }
-
-    dependencies {
-        classpath 'com.android.tools.build:gradle:7.3.1'
-    }
+plugins {
+    // Use the Android library plugin (modern DSL)
+    id("com.android.library") version "7.3.1"
 }
 
-rootProject.allprojects {
-    repositories {
-        google()
-        jcenter()
-    }
-}
-
-apply plugin: 'com.android.library'
+// Group and version (useful if you're publishing the library somewhere)
+group = "eu.simonbinder.sqlite3_flutter_libs"
+version = "1.0"
 
 android {
-    namespace "com.example.sqlite3_flutter_libs"
+    // Set your package name (replaces 'package' in the manifest)
+    namespace "eu.simonbinder.sqlite3_flutter_libs"
+
     compileSdkVersion 34
 
     defaultConfig {
         minSdkVersion 16
     }
+
+    // Lint checks to ignore certain warnings if needed
     lintOptions {
-        disable 'InvalidPackage'
+        disable "InvalidPackage"
     }
 }
 
+// Repositories for dependencies
+repositories {
+    google()
+    mavenCentral()
+}
+
 dependencies {
+    // SQLCipher dependency
     implementation "net.zetetic:android-database-sqlcipher:4.4.3"
 }
