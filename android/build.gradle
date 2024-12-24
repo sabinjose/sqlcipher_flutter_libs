@@ -22,7 +22,7 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
-    namespace "sqlcipher_flutter_libs"
+    namespace "com.example.sqlite3_flutter_libs"
     compileSdkVersion 34
 
     defaultConfig {
