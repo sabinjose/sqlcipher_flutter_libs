@@ -1,3 +1,5 @@
+> Source is cloned from https://github.com/simolus3/sqlite3.dart/tree/main/sqlcipher_flutter_libs based on release version 0.5.0 to fallback to old version of sqlcipher due to issue with latest version of sqlcipher android library net.zetetic:android-database-sqlcipher:4.4.3
+
 # sqlcipher_flutter_libs
 
 Flutter apps depending on this package will contain native `SQLCipher` libraries
